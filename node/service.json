@@ -1,0 +1,15 @@
+{
+  "stack": "nodejs",
+  "memory": 256,
+  "minReplicas": 1,
+  "maxReplicas": 3,
+  "timeout": 60,
+  "ttl": 720,
+  "runtimeArgs": ["--optimize_for_size", "--max_old_space_size=192"],
+  "routes": {
+    "transactionHooks": {
+      "path": "/_v/api/payu/transactions/broker",
+      "public": true
+    }
+  }
+}

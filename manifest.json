@@ -1,0 +1,19 @@
+{
+  "vendor": "vtex",
+  "name": "connector-payu-webhook-broker",
+  "version": "0.0.1",
+  "registries": [],
+  "builders": {
+    "node": "6.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*.myvtex.com",
+        "path": "/_v/api/connectors/payu/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
